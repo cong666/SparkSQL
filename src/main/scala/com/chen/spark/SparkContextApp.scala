@@ -7,13 +7,13 @@ import org.apache.spark.SparkConf
   * Created by: ccong 
   * Date: 18/11/27 下午10:16
   */
-object SQLContextApp {
+object SparkContextApp {
   def main(args: Array[String]): Unit = {
 
     val path = args(0)
 
     val sparkConf = new SparkConf();
-    sparkConf.setAppName("SQLContextApp").setMaster("local");
+    sparkConf.setAppName("SparkContextApp").setMaster("local");
     //create SparkContext
     val sparkContext = new SparkContext(sparkConf);
     //create SQLContext
